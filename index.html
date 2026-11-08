@@ -251,4 +251,13 @@ const toggle=document.querySelector('.menu-toggle'),links=$('site-links');toggle
 setLang('en');
 })();
 </script>
+
+<script>
+const photoCredit = document.querySelector('.hero-image .photo-note');
+if (photoCredit) {
+  photoCredit.removeAttribute('data-i18n');
+  photoCredit.textContent = 'Photo / Foto: Rasmus Kull';
+}
+</script>
+
 </body></html>
