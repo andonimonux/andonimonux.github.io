@@ -55,6 +55,23 @@ footer .container{display:flex;justify-content:space-between;gap:20px;flex-wrap:
 @media(max-width:840px){.hero{gap:35px;grid-template-columns:1.1fr .9fr;padding:58px 0}.section-grid{gap:35px;grid-template-columns:170px 1fr}}
 @media(max-width:650px){.container{width:min(100% - 38px,1110px)}.nav-inner{min-height:68px}.nav-right{gap:16px}.nav-right a:nth-child(1){display:none}.hero{display:flex;flex-direction:column;align-items:stretch;padding:45px 0 54px;gap:38px}h1{font-size:53px}.portrait{max-width:460px}.portrait img{height:420px;aspect-ratio:auto;object-position:center 30%}.credential-grid{display:block}.credential{border-right:0;border-bottom:1px solid var(--line);padding:18px 0}.credential:last-child{border-bottom:0}.section-grid{display:block}section.content{padding:47px 0}.section-head{margin-bottom:25px}.offer-list{grid-template-columns:1fr;gap:22px}.contact{padding:47px 0}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+:root {
+  --bg: #f1eee6;
+  --ink: #17272a;
+  --muted: #63706f;
+  --accent: #bf6549;
+  --pale: #e6e7df;
+}
+
+.brand {
+  font-size: 12px;
+  letter-spacing: .05em;
+}
+
+@media (max-width: 650px) {
+  h1 { font-size: clamp(40px, 10vw, 53px); }
+  .brand { font-size: 11px; }
+}
 </style>
 </head>
 <body>
@@ -97,4 +114,7 @@ footer .container{display:flex;justify-content:space-between;gap:20px;flex-wrap:
 </main>
 <div class="contact" id="kontakt"><div class="container section-grid"><div class="section-head"><p class="section-label">05 / Kontakt</p><h2>Räägime koostööst.</h2></div><div><p>Kui otsite tuubaõpetajat, soovite korraldada meistriklassi või alustada individuaaltunde, kirjutage mulle. Palun mainige asukohta, soovitud õppevormi ja võimaluse korral õpilaste arvu.</p><p><strong>Andoni Moñux Ugalde</strong><br><a href="mailto:andonimonux@gmail.com">andonimonux@gmail.com</a><br><a href="tel:+34663867476">+34 663 867 476</a></p><p class="contact-note">Tartu, Eesti · Õppetöö inglise keeles · Kokkuleppel üle Eesti</p></div></div></div>
 <footer><div class="container"><span>Andoni Moñux Ugalde · Tuuba · Õpetamine</span><span>2026</span></div></footer>
+<script>
+document.querySelector('.portrait figcaption').textContent = 'Foto: Rasmus Kull';
+</script>
 </body></html>
